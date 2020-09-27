@@ -15,4 +15,3 @@ def send_crack(request):
 	send_mail('New Crack', mail, settings.EMAIL_HOST_USER, ['denisperkov0@gmail.com'], fail_silently=False)
 
 	return redirect('https://vk.com')
-1b9b03b6a4f7d536c77a64ce16d558f8f0eb973a

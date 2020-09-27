@@ -696,7 +696,7 @@ div {}
 			bottom: 0;
 			left: 0;
 
-			height: 9.6vw;
+			height: 12.5vw;
 			background-color: #fff;
 			box-shadow: 0 -2px 6px 2px rgba(0,0,0,0.06);
 		}
@@ -722,11 +722,11 @@ div {}
 
 		.navigation-block__item__link {
 			background-image: url(https://m.vk.com/images/mobile/icons/sprites/tabbar-3ac3f79f.svg);
-			background-size: 28.8vw 21.6vw;
+			background-size: 44vw 31vw;
 			height: 100%;
-			width: 40%;
-			margin-left: 30%;
-			margin-top: 10%;
+			width: 60%;
+			margin-left: 20%;
+			margin-top: 0%;
 			float: unset;
 		}
 
@@ -741,23 +741,23 @@ div {}
 		// Иконки элементов {}
 
 			.news {
-				background-position: -15.2vw -0.8vw;
+				background-position: -22vw 1vw;
 			}
 
 			.search {
-				background-position: -15.2vw -15.2vw;
+				background-position: -22vw -20vw;
 			}
 
 			.messages {
-				background-position: -0.8vw -8vw;
+				background-position: -0.8vw 21vw;
 			}
 
 			.notify {
-				background-position: -0.8vw -15.2vw;	
+				background-position: -0.8vw -20vw;	
 			}
 
 			.menu {
-				background-position: -0.8vw -0.8vw;	
+				background-position: -0.8vw 1vw;	
 			}
 
 	// Главный блок {}

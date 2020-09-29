@@ -74,13 +74,14 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'vk.wsgi.application'
 
-EMAIL_HOST = 'smtp.mail.ru'
-EMAIL_PORT = 2525
-EMAIL_HOST_USER = "pop-cosmetics@mail.ru"
-EMAIL_HOST_PASSWORD = 'Denpro123!'
-EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.yandex.ru'
+EMAIL_PORT = 465
+EMAIL_HOST_USER = "Perk.7@yandex.ru"
+EMAIL_HOST_PASSWORD = "Denpro123!"
+EMAIL_USE_SSL = True
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 SERVER_EMAIL = EMAIL_HOST_USER
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
@@ -132,5 +133,5 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+STATIC_ROOT = (os.path.join(BASE_DIR, 'static/'),)
 STATIC_URL = '/static/'

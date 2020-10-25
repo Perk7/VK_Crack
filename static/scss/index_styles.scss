@@ -1,0 +1,338 @@
+// Animations
+
+	@keyframes DonateButtonAnimate {
+		0% {
+			color: #d3be67;
+			background-color: rgba(0,0,0,0);
+		}
+		100% {
+			color: #2c4b71;
+			background-color: #d3be67;
+		}
+	}
+
+	@keyframes ButtonAnimate {
+		0% {
+			color: #FFF;
+			background-color: rgba(0,0,0,0);
+		}
+		100% {
+			color: #2c4b71;
+			background-color: #FFF;
+		}
+	}
+
+// Gradient of bg
+div{}
+
+	button:focus, input:focus {
+			outline: none;
+		}
+
+	body {
+		width: 100wh;
+		height: 90vh;
+		color: #fff;
+		background: linear-gradient(-45deg, #182024, #576181, #2c4b71, #081e44);
+		background-size: 400% 400%;
+		-webkit-animation: Gradient 15s ease infinite;
+		-moz-animation: Gradient 15s ease infinite;
+		animation: Gradient 15s ease infinite;
+	}
+
+	@-webkit-keyframes Gradient {
+		0% {
+			background-position: 0% 50%
+		}
+		50% {
+			background-position: 100% 50%
+		}
+		100% {
+			background-position: 0% 50%
+		}
+	}
+
+	@-moz-keyframes Gradient {
+		0% {
+			background-position: 0% 50%
+		}
+		50% {
+			background-position: 100% 50%
+		}
+		100% {
+			background-position: 0% 50%
+		}
+	}
+
+	@keyframes Gradient {
+		0% {
+			background-position: 0% 50%
+		}
+		50% {
+			background-position: 100% 50%
+		}
+		100% {
+			background-position: 0% 50%
+		}
+	}
+
+// Header
+div{}
+	
+	header {
+		padding-top: 6vw;
+	}
+
+	// Heading
+	div{}
+
+		.header__main-heading {
+			font-size: 3.5vw;
+			text-align: center;
+		}
+
+// Navigation
+div{}
+
+	nav {
+		padding: 2vw 0 0 40vw;
+	}
+
+	// Nav-list
+	div{}
+
+	.nav__nav-list {
+		list-style: none;
+		padding: 0;
+	}
+
+	.nav-list__item > a, .nav-list__item > button {
+		padding: 1.2vw 0;
+		width: 20vw;
+		text-align: center;
+		text-decoration: none;
+		color: #FFF;
+		font-size: 1.3vw;
+		background-color: rgba(255, 255, 255, 0);
+		border: 3px solid #FFF;
+		display: inline-block;
+		font-family: sans-serif;
+		cursor: pointer;
+		margin-bottom: 2vw;
+		font-weight: 700;
+
+		&:hover {
+			background-color: #fff;
+			color: #2c4b71;
+
+			animation: ButtonAnimate 0.8s ease;
+		}
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	.nav-list__item > a {
+		width: 19.6vw;
+	}
+
+// Footer
+div{}
+
+	footer {
+		position: fixed;
+		bottom: 0;
+	}
+
+	.footer__inc-name {
+		float: left;
+		font-size: 1.8vw;
+		margin: 0 0 1vw 1vw;
+	}
+
+	.footer__year {
+		float: right;
+		font-size: 1.8vw;
+		margin: 0 1vw 1vw 83vw;
+	}
+
+// Shadow popup
+div{}
+
+	.shadow-popup {
+		position: absolute;
+		width: 100vw;
+		height: 100vh;
+		top: 0;
+		left: 0;
+		background: rgba(20, 20, 20, 0.5);;
+		z-index: 50;
+	}
+
+// Load page 
+div {}
+
+	.load-page, .support-page {
+		position: absolute;
+		left: 20vw;
+		top: 6vw;
+
+		width: 60vw;
+		height: 30vw;
+		z-index: 100;
+
+		border: 3px solid #FFF;
+
+		background: linear-gradient(-45deg, #182024, #576181, #2c4b71, #081e44);
+		background-size: 400% 400%;
+		-webkit-animation: Gradient 15s ease infinite;
+		-moz-animation: Gradient 15s ease infinite;
+		animation: Gradient 15s ease infinite;
+	}
+
+	.popup__heading {
+		float: left;
+		margin: 0.7vw 0 3vw 2vw;
+		font-size: 2vw;
+		font-family: monospace;
+	}
+
+	.popup__close-btn {
+		float: right;
+		margin: 0.8vw 2vw 0 0;
+		font-size: 1.55vw;
+		padding: 0;
+		height: 2.2vw;
+		width: 2.2vw;
+		font-weight: 1000;
+		color: #FFF;
+		border: 0;
+		background-color: rgba(0,0,0,0);
+		border-radius: 0.5vw;
+
+		&:hover {
+			background-color: #fff;
+			color: #2c4b71;
+
+			animation: ButtonAnimate 0.8s ease;
+		}
+	}
+
+	.load-page__form {
+		clear: both;
+		margin-left: 3vw;
+	}
+
+	.load-page__form_info {
+		font-size: 1.5vw;
+		margin-bottom: 1vw;
+	}
+
+	.load-page__form_form {
+		margin-left: 1vw;
+	
+
+		input {
+			display: block;
+			margin-top: 0.5vw;
+			font-size: 1vw;
+			padding: 0.35vw 2vw 0.35vw 0.5vw;
+		}
+
+		button {
+			margin-top: 1.5vw;
+			border: 2px solid #FFF;
+			background-color: rgba(0,0,0,0);
+			color: #FFF;
+			font-size: 1.1vw;
+			padding: 0.5vw 4.4vw;
+			font-weight: 700;
+
+			&:hover {
+				background-color: #fff;
+				color: #2c4b71;
+
+				animation: ButtonAnimate 0.8s ease;
+			}
+		}
+	}
+
+	.load-page__last {
+		margin-top: 2vw;
+		margin-left: 3vw;
+	}
+
+	.load-page__last__save {
+		border: 1px solid #FFF;
+		margin-left: 1vw;
+		height: 5.5vw;
+		width: 52vw;
+		color: #FFF;
+		cursor: pointer;
+
+		&:hover {
+			background-color: #fff;
+			color: #2c4b71;
+
+			animation: ButtonAnimate 0.8s ease;
+		}
+	}
+
+	.load-page__last__img {
+		display: inline-block;
+		float: left;
+		width: 5vw;
+		height: 3.5vw;
+		margin: 1vw 1.5vw;
+	}
+
+	.load-page__last__heading, .load-page__last__time {
+		display: inline-block;
+		float: left;
+		font-size: 1.5vw;
+		font-family: sans-serif;
+		margin-top: 2vw;
+	}
+
+	.load-page__last__time {
+		margin-left: 2vw;
+	}
+
+// Support page 
+div {}
+	
+	.support-page {
+		height: 22vw;
+	}
+
+	.support-page__info {
+		clear: both;
+		font-size: 1.5vw;
+		margin-left: 3.5vw;
+
+		div {
+			width: 75%;
+			margin-top: 1vw;
+		}
+
+		a {
+			font-family: sans-serif;
+			display: inline-block;
+			text-decoration: none;
+			color: #d3be67;
+			background-color: rgba(0,0,0,0);
+			border: 2px solid #d3be67;
+			font-size: 1.2vw;
+			padding: 1vw 5vw;
+			font-weight: 700;
+			margin-top: 2vw;
+
+			&:hover {
+				background-color: #d3be67;
+				color: #2c4b71;
+
+				animation: DonateButtonAnimate 0.8s ease;
+			}
+		}
+	}

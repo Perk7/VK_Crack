@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="{% static 'css/new_game_styles.css' %}">
+
+	<title>The Great War</title>
+</head>
+<body>
+	<header>
+		<a href="/">&#8617;</a>
+		<h1 class="header__main-heading">201 4E</h1>
+	</header>
+	<main>
+		<aside class="country-list_block">
+			<ul class="country-list_list">				
+				<li class="country-list__item" id="1dominion">Альдмерский Доминион</li>
+				<li class="country-list__item country-list__item_active" id="1empire">Империя Тамриэль</li>
+				<li class="country-list__item" id="1stormcloaks">Братья Бури</li>
+				<li class="country-list__item" id="1orsinium">Орсиниум</li>
+				<li class="country-list__item" id="1argonia">Ан-Зайлиль</li>
+				<li class="country-list__item" id="1skyrim">Провинция Скайрим</li>
+				<li class="country-list__item" id="1redoran">Дом Редоран</li>
+				<li class="country-list__item" id="1telvanni">Дом Телванни</li>
+				<li class="country-list__item" id="1sadras">Дом Садрас</li>
+				<li class="country-list__item" id="1indoril">Дом Индорил</li>
+				<li class="country-list__item" id="1anequina">Анеквина</li>
+				<li class="country-list__item" id="1pelletine">Пеллетайн</li>
+				<li class="country-list__item" id="1rimmen">Риммен</li>
+				<li class="country-list__item" id="1vencenosci">Венценосцы</li>
+				<li class="country-list__item" id="1predshest">Предшественники</li>
+				<li class="country-list__item" id="1sultanat">Султанат Сентинеля</li>
+				<li class="country-list__item" id="1daggerfall">Королевство Даггерфолл</li>
+				<li class="country-list__item" id="1wayrest">Королевство Вэйрест</li>
+				<li class="country-list__item" id="1evermore">Королевство Эвермор</li>
+				<li class="country-list__item" id="1elteric">Лига Эльтерик</li>
+				<li class="country-list__item" id="1shornhelm">Королество Шорнхельм</li>
+			</ul>
+		</aside>
+
+<!-- empire -->
+		<section class="country-block__item" id="empire">
+			<div class="country-block__name-block">
+				<h2 class="country-block__name">Империя Тамриэль</h2>
+			</div>
+			<div class="country-block__image-block">
+				<img src="https://i.ytimg.com/vi/RQzqWEiTYjw/maxresdefault.jpg" alt="" class="country-block__flag">
+				<img src="https://staticdelivery.nexusmods.com/mods/101/images/31809-2-1274387387.jpg" alt="" class="country-block__map">
+			</div>
+			<div class="country-block__info-block">
+				<table>
+					<tr class="info-block__capital">
+						<td>Столица:</td>
+						<td>Имперский город</td>
+					</tr>
+					<tr class="info-block__population">
+						<td>Население:</td>
+						<td>980.000 чел</td>
+					</tr>
+					<tr class="info-block__area">
+						<td>Площадь:</td>
+						<td>740.000 км2</td>
+					</tr>
+					<tr class="info-block__gdp">
+						<td>ВВП:</td>
+						<td>25 млн спт</td>
+					</tr>
+					<tr class="info-block__army">
+						<td>Армия:</td>
+						<td>45.000 чел</td>
+					</tr>
+					<tr class="info-block__status">
+						<td>Статус:</td>
+						<td>Независимый</td>
+					</tr>
+					<tr class="info-block__gov-form">
+						<td>Правительство:</td>
+						<td>Парламентская монархия</td>
+					</tr>
+					<tr class="info-block__pop-mood">
+						<td>Счастье:</td>
+						<td>60%</td>
+					</tr>
+				</table>
+			</div>
+			<div class="country-block__btn-block">
+				<a href="">Выбрать</a>
+			</div>	
+			<div class="country-block__dimplomatics-block">
+				<h3>Дипломатические отношения:</h3>
+				<table>
+					<tr class="dimplomatics-block__item">
+						<td>Альдмерский Доминион</td>
+						<td>-7</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Братья Бури</td>
+						<td>война</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Орсиниум</td>
+						<td>-2</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Ан-Зайлиль</td>
+						<td>-6</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Провинция Скайрим</td>
+						<td>вассал</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Дом Редоран</td>
+						<td>0</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Дом Телванни</td>
+						<td>0</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Дом Садрас</td>
+						<td>вассал</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Дом Индорил</td>
+						<td>0</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Анеквина</td>
+						<td>-3</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Пеллетайн</td>
+						<td>-3</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Риммен</td>
+						<td>0</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Венценосцы</td>
+						<td>-4</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Предшественники</td>
+						<td>-2</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Султанат Сентинеля</td>
+						<td>-4</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Королество Даггерфолл</td>
+						<td>вассал</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Королевство Вэйрест</td>
+						<td>вассал</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Королевство Эвермор</td>
+						<td>-2</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Лига Эльтерик</td>
+						<td>вассал</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Королевство Шорнхельм</td>
+						<td>вассал</td>
+					</tr>
+				</table>
+			</div>	
+		</section>
+
+<!-- dominion -->
+		<section class="country-block__item" id="dominion" hidden>
+			<div class="country-block__name-block">
+				<h2 class="country-block__name">Альдмерский Доминион</h2>
+			</div>
+			<div class="country-block__image-block">
+				<img src="https://pm1.narvii.com/7139/890d636aab3ad08e6567eef03e29c94e224f6a3cr1-1920-1080v2_hq.jpg" alt="" class="country-block__flag">
+				<img src="https://game-maps.com/ESO/img/Aldmeri-Dominion-Alliance-Map.jpg" alt="" class="country-block__map">
+			</div>
+			<div class="country-block__info-block">
+				<table>
+					<tr class="info-block__capital">
+						<td>Столица:</td>
+						<td>Алинор</td>
+					</tr>
+					<tr class="info-block__population">
+						<td>Население:</td>
+						<td>840.000 чел</td>
+					</tr>
+					<tr class="info-block__area">
+						<td>Площадь:</td>
+						<td>700.000 км2</td>
+					</tr>
+					<tr class="info-block__gdp">
+						<td>ВВП:</td>
+						<td>38 млн спт</td>
+					</tr>
+					<tr class="info-block__army">
+						<td>Армия:</td>
+						<td>65.000 чел</td>
+					</tr>
+					<tr class="info-block__status">
+						<td>Статус:</td>
+						<td>Независимый</td>
+					</tr>
+					<tr class="info-block__gov-form">
+						<td>Правительство:</td>
+						<td>Однопартийная диктатура</td>
+					</tr>
+					<tr class="info-block__pop-mood">
+						<td>Счастье:</td>
+						<td>85%</td>
+					</tr>
+				</table>
+			</div>
+			<div class="country-block__btn-block">
+				<a href="">Выбрать</a>
+			</div>	
+			<div class="country-block__dimplomatics-block">
+				<h3>Дипломатические отношения:</h3>
+				<table>
+					<tr class="dimplomatics-block__item">
+						<td>Империя Тамриэль</td>
+						<td>-7</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Братья Бури</td>
+						<td>-4</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Орсиниум</td>
+						<td>-2</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Ан-Зайлиль</td>
+						<td>3</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Провинция Скайрим</td>
+						<td>-6</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Дом Редоран</td>
+						<td>-1</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Дом Телванни</td>
+						<td>-1</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Дом Садрас</td>
+						<td>-1</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Дом Индорил</td>
+						<td>-1</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Анеквина</td>
+						<td>вассал</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Пеллетайн</td>
+						<td>вассал</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Риммен</td>
+						<td>-3</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Венценосцы</td>
+						<td>-8</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Предшественники</td>
+						<td>-8</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Султанат Сентинеля</td>
+						<td>-7</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Королество Даггерфолл</td>
+						<td>-4</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Королевство Вэйрест</td>
+						<td>-4</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Королевство Эвермор</td>
+						<td>2</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Лига Эльтерик</td>
+						<td>-4</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Королевство Шорнхельм</td>
+						<td>-4</td>
+					</tr>
+				</table>
+			</div>	
+		</section>
+
+<!-- stormcloaks -->
+		<section class="country-block__item" id="stormcloaks" hidden>
+			<div class="country-block__name-block">
+				<h2 class="country-block__name">Братья Бури</h2>
+			</div>
+			<div class="country-block__image-block">
+				<img src="https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photos/8740524/Stormcloaks.jpg" alt="" class="country-block__flag">
+				<img src="https://sun9-53.userapi.com/c850620/v850620133/1a58f6/MXkAnEznuSQ.jpg" alt="" class="country-block__map">
+			</div>
+			<div class="country-block__info-block">
+				<table>
+					<tr class="info-block__capital">
+						<td>Столица:</td>
+						<td>Виндхельм</td>
+					</tr>
+					<tr class="info-block__population">
+						<td>Население:</td>
+						<td>280.000 чел</td>
+					</tr>
+					<tr class="info-block__area">
+						<td>Площадь:</td>
+						<td>260.000 км2</td>
+					</tr>
+					<tr class="info-block__gdp">
+						<td>ВВП:</td>
+						<td>7 млн спт</td>
+					</tr>
+					<tr class="info-block__army">
+						<td>Армия:</td>
+						<td>18.000 чел</td>
+					</tr>
+					<tr class="info-block__status">
+						<td>Статус:</td>
+						<td>Независимый</td>
+					</tr>
+					<tr class="info-block__gov-form">
+						<td>Правительство:</td>
+						<td>Монархия</td>
+					</tr>
+					<tr class="info-block__pop-mood">
+						<td>Счастье:</td>
+						<td>40%</td>
+					</tr>
+				</table>
+			</div>
+			<div class="country-block__btn-block">
+				<a href="">Выбрать</a>
+			</div>	
+			<div class="country-block__dimplomatics-block">
+				<h3>Дипломатические отношения:</h3>
+				<table>
+					<tr class="dimplomatics-block__item">
+						<td>Альдмерский Доминион</td>
+						<td>-4</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Империя</td>
+						<td>война</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Орсиниум</td>
+						<td>0</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Ан-Зайлиль</td>
+						<td>-4</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Провинция Скайрим</td>
+						<td>война</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Дом Редоран</td>
+						<td>2</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Дом Телванни</td>
+						<td>0</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Дом Садрас</td>
+						<td>-3</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Дом Индорил</td>
+						<td>0</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Анеквина</td>
+						<td>-2</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Пеллетайн</td>
+						<td>-1</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Риммен</td>
+						<td>2</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Венценосцы</td>
+						<td>2</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Предшественники</td>
+						<td>2</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Султанат Сентинеля</td>
+						<td>1</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Королество Даггерфолл</td>
+						<td>-5</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Королевство Вэйрест</td>
+						<td>-6</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Королевство Эвермор</td>
+						<td>3</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Лига Эльтерик</td>
+						<td>-6</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Королевство Шорнхельм</td>
+						<td>-6</td>
+					</tr>
+				</table>
+			</div>	
+		</section>
+
+<!-- orsinium -->
+		<section class="country-block__item" id="orsinium" hidden>
+			<div class="country-block__name-block">
+				<h2 class="country-block__name">Орсиниум</h2>
+			</div>
+			<div class="country-block__image-block">
+				<img src="https://on-desktop.com/ru/images/wp.php?path=/wps/Backgrounds_Hammer_and_anvil__background_106532_.png&wp=17" alt="" class="country-block__flag">
+				<img src="https://steamuserimages-a.akamaihd.net/ugc/814433104404613168/F467B89A135DE2CEE3C19C9F60352AFAE1162B83/" alt="" class="country-block__map">
+			</div>
+			<div class="country-block__info-block">
+				<table>
+					<tr class="info-block__capital">
+						<td>Столица:</td>
+						<td>Орсиниум</td>
+					</tr>
+					<tr class="info-block__population">
+						<td>Население:</td>
+						<td>80.000 чел</td>
+					</tr>
+					<tr class="info-block__area">
+						<td>Площадь:</td>
+						<td>20.000 км2</td>
+					</tr>
+					<tr class="info-block__gdp">
+						<td>ВВП:</td>
+						<td>500 тыс спт</td>
+					</tr>
+					<tr class="info-block__army">
+						<td>Армия:</td>
+						<td>10.000 чел</td>
+					</tr>
+					<tr class="info-block__status">
+						<td>Статус:</td>
+						<td>Независимый</td>
+					</tr>
+					<tr class="info-block__gov-form">
+						<td>Правительство:</td>
+						<td>Монархия</td>
+					</tr>
+					<tr class="info-block__pop-mood">
+						<td>Счастье:</td>
+						<td>50%</td>
+					</tr>
+				</table>
+			</div>
+			<div class="country-block__btn-block">
+				<a href="">Выбрать</a>
+			</div>	
+			<div class="country-block__dimplomatics-block">
+				<h3>Дипломатические отношения:</h3>
+				<table>
+					<tr class="dimplomatics-block__item">
+						<td>Альдмерский Доминион</td>
+						<td>-2</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Империя</td>
+						<td>-2</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Братья Бури</td>
+						<td>0</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Ан-Зайлиль</td>
+						<td>0</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Провинция Скайрим</td>
+						<td>0</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Дом Редоран</td>
+						<td>0</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Дом Телванни</td>
+						<td>0</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Дом Садрас</td>
+						<td>0</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Дом Индорил</td>
+						<td>0</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Анеквина</td>
+						<td>0</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Пеллетайн</td>
+						<td>0</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Риммен</td>
+						<td>0</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Венценосцы</td>
+						<td>-2</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Предшественники</td>
+						<td>-3</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Султанат Сентинеля</td>
+						<td>-2</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Королество Даггерфолл</td>
+						<td>-1</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Королевство Вэйрест</td>
+						<td>-5</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Королевство Эвермор</td>
+						<td>-2</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Лига Эльтерик</td>
+						<td>-2</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Королевство Шорнхельм</td>
+						<td>-1</td>
+					</tr>
+				</table>
+			</div>	
+		</section>
+
+
+<!-- argonia -->
+		<section class="country-block__item" id="argonia" hidden>
+			<div class="country-block__name-block">
+				<h2 class="country-block__name">Ан-Зайлиль</h2>
+			</div>
+			<div class="country-block__image-block">
+				<img src="https://elderscrollsonline.wiki.fextralife.com/file/Elder-Scrolls-Online/08%20EP%20-%20Argonia%20Flag.png" alt="" class="country-block__flag">
+				<img src="https://avatars.mds.yandex.net/get-zen_doc/1362956/pub_5c1bf062b7cd5100aad3ab41_5c1bf28be5dd0e00abf3288e/scale_1200" alt="" class="country-block__map">
+			</div>
+			<div class="country-block__info-block">
+				<table>
+					<tr class="info-block__capital">
+						<td>Столица:</td>
+						<td>Блэкроуз</td>
+					</tr>
+					<tr class="info-block__population">
+						<td>Население:</td>
+						<td>650.000 чел</td>
+					</tr>
+					<tr class="info-block__area">
+						<td>Площадь:</td>
+						<td>310.000 км2</td>
+					</tr>
+					<tr class="info-block__gdp">
+						<td>ВВП:</td>
+						<td>4 млн спт</td>
+					</tr>
+					<tr class="info-block__army">
+						<td>Армия:</td>
+						<td>38.000 чел</td>
+					</tr>
+					<tr class="info-block__status">
+						<td>Статус:</td>
+						<td>Независимый</td>
+					</tr>
+					<tr class="info-block__gov-form">
+						<td>Правительство:</td>
+						<td>Однопартийная диктатура</td>
+					</tr>
+					<tr class="info-block__pop-mood">
+						<td>Счастье:</td>
+						<td>60%</td>
+					</tr>
+				</table>
+			</div>
+			<div class="country-block__btn-block">
+				<a href="">Выбрать</a>
+			</div>	
+			<div class="country-block__dimplomatics-block">
+				<h3>Дипломатические отношения:</h3>
+				<table>
+					<tr class="dimplomatics-block__item">
+						<td>Альдмерский Доминион</td>
+						<td>3</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Империя</td>
+						<td>-6</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Орсиниум</td>
+						<td>0</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Братья Бури</td>
+						<td>-4</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Провинция Скайрим</td>
+						<td>-4</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Дом Редоран</td>
+						<td>-8</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Дом Телванни</td>
+						<td>-8</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Дом Садрас</td>
+						<td>-9</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Дом Индорил</td>
+						<td>-9</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Анеквина</td>
+						<td>2</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Пеллетайн</td>
+						<td>2</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Риммен</td>
+						<td>0</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Венценосцы</td>
+						<td>-2</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Предшественники</td>
+						<td>-2</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Султанат Сентинеля</td>
+						<td>-1</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Королество Даггерфолл</td>
+						<td>-4</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Королевство Вэйрест</td>
+						<td>-3</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Королевство Эвермор</td>
+						<td>3</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Лига Эльтерик</td>
+						<td>-3</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Королевство Шорнхельм</td>
+						<td>-3</td>
+					</tr>
+				</table>
+			</div>	
+		</section>
+
+
+<!-- skyrim -->
+		<section class="country-block__item" id="skyrim" hidden>
+			<div class="country-block__name-block">
+				<h2 class="country-block__name">Провинция Скайрим</h2>
+			</div>
+			<div class="country-block__image-block">
+				<img src="http://img0.joyreactor.cc/pics/post/full/The-Elder-Scrolls-%D1%84%D1%8D%D0%BD%D0%B4%D0%BE%D0%BC%D1%8B-TES-art-%D0%A1%D0%B8%D1%80%D0%BE%D0%B4%D0%B8%D0%BB-1365248.png" alt="" class="country-block__flag">
+				<img src="https://pm1.narvii.com/6277/24efc9f9aa00f84ae861e88d2e94749a9c78f8f3_hq.jpg" alt="" class="country-block__map">
+			</div>
+			<div class="country-block__info-block">
+				<table>
+					<tr class="info-block__capital">
+						<td>Столица:</td>
+						<td>Солитьюд</td>
+					</tr>
+					<tr class="info-block__population">
+						<td>Население:</td>
+						<td>320.000 чел</td>
+					</tr>
+					<tr class="info-block__area">
+						<td>Площадь:</td>
+						<td>240.000 км2</td>
+					</tr>
+					<tr class="info-block__gdp">
+						<td>ВВП:</td>
+						<td>12 млн спт</td>
+					</tr>
+					<tr class="info-block__army">
+						<td>Армия:</td>
+						<td>16.000 чел</td>
+					</tr>
+					<tr class="info-block__status">
+						<td>Статус:</td>
+						<td>Вассал</td>
+					</tr>
+					<tr class="info-block__gov-form">
+						<td>Правительство:</td>
+						<td>Монархия</td>
+					</tr>
+					<tr class="info-block__pop-mood">
+						<td>Счастье:</td>
+						<td>50%</td>
+					</tr>
+				</table>
+			</div>
+			<div class="country-block__btn-block">
+				<a href="">Выбрать</a>
+			</div>	
+			<div class="country-block__dimplomatics-block">
+				<h3>Дипломатические отношения:</h3>
+				<table>
+					<tr class="dimplomatics-block__item">
+						<td>Альдмерский Доминион</td>
+						<td>-6</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Империя</td>
+						<td>сюзерен</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Орсиниум</td>
+						<td>0</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Ан-Зайлиль</td>
+						<td>-4</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Братья Бури</td>
+						<td>война</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Дом Редоран</td>
+						<td>4</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Дом Телванни</td>
+						<td>2</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Дом Садрас</td>
+						<td>3</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Дом Индорил</td>
+						<td>2</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Анеквина</td>
+						<td>-3</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Пеллетайн</td>
+						<td>-2</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Риммен</td>
+						<td>2</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Венценосцы</td>
+						<td>-1</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Предшественники</td>
+						<td>-2</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Султанат Сентинеля</td>
+						<td>0</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Королество Даггерфолл</td>
+						<td>4</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Королевство Вэйрест</td>
+						<td>4</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Королевство Эвермор</td>
+						<td>-2</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Лига Эльтерик</td>
+						<td>5</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Королевство Шорнхельм</td>
+						<td>3</td>
+					</tr>
+				</table>
+			</div>	
+		</section>
+
+
+<!--  -->
+		<section class="country-block__item" id="stormcloaks" hidden>
+			<div class="country-block__name-block">
+				<h2 class="country-block__name">Братья Бури</h2>
+			</div>
+			<div class="country-block__image-block">
+				<img src="https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photos/8740524/Stormcloaks.jpg" alt="" class="country-block__flag">
+				<img src="https://sun9-53.userapi.com/c850620/v850620133/1a58f6/MXkAnEznuSQ.jpg" alt="" class="country-block__map">
+			</div>
+			<div class="country-block__info-block">
+				<table>
+					<tr class="info-block__capital">
+						<td>Столица:</td>
+						<td>Виндхельм</td>
+					</tr>
+					<tr class="info-block__population">
+						<td>Население:</td>
+						<td>280.000 чел</td>
+					</tr>
+					<tr class="info-block__area">
+						<td>Площадь:</td>
+						<td>260.000 км2</td>
+					</tr>
+					<tr class="info-block__gdp">
+						<td>ВВП:</td>
+						<td>7 млн спт</td>
+					</tr>
+					<tr class="info-block__army">
+						<td>Армия:</td>
+						<td>18.000 чел</td>
+					</tr>
+					<tr class="info-block__status">
+						<td>Статус:</td>
+						<td>Независимый</td>
+					</tr>
+					<tr class="info-block__gov-form">
+						<td>Правительство:</td>
+						<td>Монархия</td>
+					</tr>
+					<tr class="info-block__pop-mood">
+						<td>Счастье:</td>
+						<td>40%</td>
+					</tr>
+				</table>
+			</div>
+			<div class="country-block__btn-block">
+				<a href="">Выбрать</a>
+			</div>	
+			<div class="country-block__dimplomatics-block">
+				<h3>Дипломатические отношения:</h3>
+				<table>
+					<tr class="dimplomatics-block__item">
+						<td>Альдмерский Доминион</td>
+						<td>-4</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Империя</td>
+						<td>война</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Орсиниум</td>
+						<td>0</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Ан-Зайлиль</td>
+						<td>-4</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Провинция Скайрим</td>
+						<td>война</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Дом Редоран</td>
+						<td>2</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Дом Телванни</td>
+						<td>0</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Дом Садрас</td>
+						<td>-3</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Дом Индорил</td>
+						<td>0</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Анеквина</td>
+						<td>-2</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Пеллетайн</td>
+						<td>-1</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Риммен</td>
+						<td>2</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Венценосцы</td>
+						<td>2</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Предшественники</td>
+						<td>2</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Султанат Сентинеля</td>
+						<td>1</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Королество Даггерфолл</td>
+						<td>-5</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Королевство Вэйрест</td>
+						<td>-6</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Королевство Эвермор</td>
+						<td>3</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Лига Эльтерик</td>
+						<td>-6</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Королевство Шорнхельм</td>
+						<td>-6</td>
+					</tr>
+				</table>
+			</div>	
+		</section>
+
+
+<!-- stormcloaks -->
+		<section class="country-block__item" id="stormcloaks" hidden>
+			<div class="country-block__name-block">
+				<h2 class="country-block__name">Братья Бури</h2>
+			</div>
+			<div class="country-block__image-block">
+				<img src="https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photos/8740524/Stormcloaks.jpg" alt="" class="country-block__flag">
+				<img src="https://sun9-53.userapi.com/c850620/v850620133/1a58f6/MXkAnEznuSQ.jpg" alt="" class="country-block__map">
+			</div>
+			<div class="country-block__info-block">
+				<table>
+					<tr class="info-block__capital">
+						<td>Столица:</td>
+						<td>Виндхельм</td>
+					</tr>
+					<tr class="info-block__population">
+						<td>Население:</td>
+						<td>280.000 чел</td>
+					</tr>
+					<tr class="info-block__area">
+						<td>Площадь:</td>
+						<td>260.000 км2</td>
+					</tr>
+					<tr class="info-block__gdp">
+						<td>ВВП:</td>
+						<td>7 млн спт</td>
+					</tr>
+					<tr class="info-block__army">
+						<td>Армия:</td>
+						<td>18.000 чел</td>
+					</tr>
+					<tr class="info-block__status">
+						<td>Статус:</td>
+						<td>Независимый</td>
+					</tr>
+					<tr class="info-block__gov-form">
+						<td>Правительство:</td>
+						<td>Монархия</td>
+					</tr>
+					<tr class="info-block__pop-mood">
+						<td>Счастье:</td>
+						<td>40%</td>
+					</tr>
+				</table>
+			</div>
+			<div class="country-block__btn-block">
+				<a href="">Выбрать</a>
+			</div>	
+			<div class="country-block__dimplomatics-block">
+				<h3>Дипломатические отношения:</h3>
+				<table>
+					<tr class="dimplomatics-block__item">
+						<td>Альдмерский Доминион</td>
+						<td>-4</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Империя</td>
+						<td>война</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Орсиниум</td>
+						<td>0</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Ан-Зайлиль</td>
+						<td>-4</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Провинция Скайрим</td>
+						<td>война</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Дом Редоран</td>
+						<td>2</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Дом Телванни</td>
+						<td>0</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Дом Садрас</td>
+						<td>-3</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Дом Индорил</td>
+						<td>0</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Анеквина</td>
+						<td>-2</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Пеллетайн</td>
+						<td>-1</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Риммен</td>
+						<td>2</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Венценосцы</td>
+						<td>2</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Предшественники</td>
+						<td>2</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Султанат Сентинеля</td>
+						<td>1</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Королество Даггерфолл</td>
+						<td>-5</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Королевство Вэйрест</td>
+						<td>-6</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Королевство Эвермор</td>
+						<td>3</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Лига Эльтерик</td>
+						<td>-6</td>
+					</tr>
+					<tr class="dimplomatics-block__item">
+						<td>Королевство Шорнхельм</td>
+						<td>-6</td>
+					</tr>
+				</table>
+			</div>	
+		</section>
+	</main>
+	<script src="{% static 'js/new_game_scripts.js' %}"></script>
+</body>
+</html>
